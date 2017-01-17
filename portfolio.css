@@ -1,0 +1,177 @@
+.row{
+	margin-right: 0;
+}
+
+.container{
+
+}
+
+.row h1,h3,h4,p{
+	margin-bottom: 0%;
+	font-weight: 700;
+
+}
+h4,h1{
+
+	font-family: cursive;
+}
+.MyProjects{
+	display: flex;
+	flex-wrap: wrap;
+}
+.header,.MyProjects ul{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2098d1;
+}
+li{
+	float: right;
+}
+.header li{
+	list-style: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+li a:hover{
+	background-color: rgb(118, 154, 252);
+	text-decoration: none;
+	color: white;
+}
+li .name{
+	float:left;
+	color: white;
+}
+body{
+	overflow-x:hidden;
+	
+}
+
+@media screen and (max-width:1000px) and (min-width:732px){
+	.header{
+		height: 50%;
+
+	}
+	.col-md-6{
+		height: 50%;
+	}
+	.MyProjects li a{
+		align-self: center;
+		display: block;
+	}
+	.MyProjects ul{
+		list-style-type: none;
+	margin: 0;
+    padding: 0;
+    
+    background-color: #6bff6b;
+}
+}
+
+.MyProjects li a{
+	display:  inline-block;
+	align-self: center;
+
+}
+.MyProjects li a:hover{
+	background-color: #5cb85c;
+	
+}
+.MyProjects ul{
+	list-style-type: none;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6bff6b;
+}
+.MyProjects{
+	margin-top: 0;
+}
+.contacts {
+	background-color: rgba(0,0,0,0.8);
+}
+.profile img{
+	margin:5%;
+	border: solid 4px black;
+
+}
+.description{
+	margin: 5%;
+}
+.contactME{
+	color: white;
+	margin: 5%;
+}
+.facebook{
+	color: blue;
+}
+.linkdein{
+	color: grey;
+}
+.btn{
+	margin:5%;
+}
+@media screen and (max-width:1021px){
+	.visible{
+		display: none;
+	}
+	.header p{
+		font-size: 1.5em;
+		font-weight: 100;
+		display: inline;
+	}
+	.MyProjects li{
+		align-self: center;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+	.MyProjects .thumbnail{
+		border-radius: 4%;
+    padding: 0%;
+    margin-left: 25%;
+    box-sizing: border-box;
+    min-height: 30vh;
+    min-width: 52vh;
+
+		
+	}
+	.row{
+		font-size: 2em;
+		font-weight: 100;
+		line-height: 2em;
+	}
+	.MyProjects{
+		align-self: center;
+	}
+}
+.MyProjects img:hover{
+	-webkit-transform:scale(1.25);
+}
+.thumbnail{
+	border-radius: 4%;
+		padding: 0%;
+		opacity: 1;
+		
+}
+@media screen and (max-width:375px){
+	.MyProjects .thumbnail{
+		margin-left:29%;
+	}
+	.row h1,h3,h4,h2,p{
+		margin-left: 1%;
+		font-weight: 0;
+	}
+	.header p{
+		font-size: 1em;
+	}
+}
+section{
+	height: 340px;
+}
