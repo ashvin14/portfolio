@@ -13,12 +13,22 @@
 	<body>
 		<div class="header">
 		<ul>
-			<li><a href=""><p>more</p></a></li>
-			<li><a href=""><p>About me</p></a></li>
-			<li><a href=""><p>My projects</p></a></li>
+			<li class="MENU"  onclick="showContent();"><p>menu</p></li>
+			<li class="nav"><a href=""><p>more</p></a></li>
+			<li class="nav"><a href=""><p>About me</p></a></li>
+			<li class="nav"><a href=""><p>My projects</p></a></li>
 			<li style="float: left;" class="visible"><a href=""><p>Ashvin khairnar</p></a></li>
 		</ul>
 		</div>
+			<div id="menu" class="content_after_menu_pressed hide" >
+				<p class="contents">more</p>
+				<hr>
+				<p class="contents">About me</p>
+				<hr>
+				<p class="contents">My projects</p>
+				<hr>
+				
+			</div>
 		<section class="row top" style="background-color: #2098d1;">
 			<div class="text">
 			<h1 style="text-align:center;color:white;">Full Stack Learner!</h1>
@@ -72,5 +82,13 @@
 			</div>
 		</footer>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script>
+			
+			var showContent=function(){
+				document.getElementById('menu').classList.remove('hide');
+				document.getElementById('menu').classList.add('show');
+			}
+
+				</script>
 	</body>
 </html>

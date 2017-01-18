@@ -55,7 +55,7 @@ li{
 .header li{
 	list-style: none;
 }
-li a {
+.header li a {
     display: block;
     color: white;
     text-align: center;
@@ -64,9 +64,17 @@ li a {
 
 }
 li a:hover{
-	background-color: rgb(118, 154, 252);
+	
+	border: solid white;
 	text-decoration: none;
 	color: white;
+	    /* background-color: rgb(118, 154, 252); */
+    border: solid 0.3px white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.5s;
 }
 li .name{
 	float:left;
@@ -113,14 +121,25 @@ body{
 .btn{
 	margin:5%;
 }
+.MENU{
+	display: none;
+
+}
+.hide{
+	display: none;
+}
 @media screen and (max-width:1021px){
 	.visible{
 		display: none;
 	}
 	.header p{
-		font-size: 1.5em;
-		font-weight: 100;
-		display: inline;
+		    font-size: 1.5em;
+    font-weight: 100;
+    color: white;
+    display: inline;
+    position: relative;
+    left: -53%;
+    padding: 5%;
 	}
 	
 	.row{
@@ -159,8 +178,54 @@ body{
 		width: 100%;
 		height:16.667%;
 	}
-}
+	
+	.MENU{
+		display: block;
+		font-size: 1em;
+		font-family: cursive;
+	}
+	.MENU :hover{
+		border: solid white;
+	text-decoration: none;
+	color: white;
+	    /* background-color: rgb(118, 154, 252); */
+    border: solid 0.3px white;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.5s;
+	}
+	.nav{
+		display: none;
+	}
+	.content_after_menu_pressed{
+		height: 18em;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+		
+	}
+	.content_after_menu_pressed p {
+		display: block; 
+		list-style-type: none;
+		color: white;
+		text-align: center;
+		position: relative;
+		top:3%;
 
+	}
+	.contents{
+		font-size: 19px;
+		font-family: cursive;
+
+	}
+	.content_after_menu_pressed p:hover{
+		color: rgba(0,0,0,0.6);
+		transition-duration: 0.3s;
+
+	}
+	
+}
 @media screen and (max-width:375px){
 	
 	.row h1,h3,h4,h2,p{
@@ -186,3 +251,8 @@ body{
 	}
 
 }
+.show {
+	display: block;
+	transition-duration: 0.5s;
+}
+
