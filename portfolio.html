@@ -6,27 +6,28 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<!-- Optional theme -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="portfolio.css">
+		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 		<!-- Latest compiled and minified JavaScript -->
+
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" charset="utf-8">
 	</head>
 	<body>
 		<div class="header">
 		<ul>
-			<li class="MENU"  onclick="showContent();"><p>menu</p></li>
+			<li class="MENU" id="MENU" onclick="showContent();"><p><span class="glyphicon glyphicon-th-list"></span></p></li>
 			<li class="nav"><a href=""><p>more</p></a></li>
-			<li class="nav"><a href=""><p>About me</p></a></li>
+			<li class="nav"><a href="" ="#"><p>About me</p></a></li>
 			<li class="nav"><a href=""><p>My projects</p></a></li>
 			<li style="float: left;" class="visible"><a href=""><p>Ashvin khairnar</p></a></li>
 		</ul>
 		</div>
 			<div id="menu" class="content_after_menu_pressed hide" >
 				<p class="contents">more</p>
-				<hr>
+				<hr width="80%">
 				<p class="contents">About me</p>
-				<hr>
+				<hr width="80%">
 				<p class="contents">My projects</p>
-				<hr>
+				<hr width="80%">
 				
 			</div>
 		<section class="row top" style="background-color: #2098d1;">
@@ -44,7 +45,7 @@
 		</section>
 		<section class="MyProjects" >
 		
-				<div class="project Newshub" style="background-color :#f0f0f0;"><a href=""><img src="images/Newshub.png" alt=""></a></div><!--delete background color afterwards-->
+				<div class="project Newshub" style="background-color: #ffffff;"><a href=""><img src="images/new.png" alt=""></a></div><!--delete background color afterwards-->
 				<div class="project Angular" style="background-color:#191919;"><a href=""><img src="images/angular.png" alt=""></a></div>
 				<div class="project Node" style="background-color:#333333;"><a href=""><img src="images/node.jpg" alt=""></a></div>
 				<div class="project CSS" style="background-color:#128fc5;"><a href=""><img src="images/css.jpg" alt=""></a></div>
@@ -53,7 +54,8 @@
 
 			
 		</section>
-		<footer class="contacts" >
+		<footer class="contacts">
+			<a href="#"></a>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="profile"><img src="images/coder.jpg" height="70" width="100" style="border-radius:25px;float: left; "></div>
@@ -72,6 +74,11 @@
 					
 						<p><strong>contact</strong></p>
 						<hr>
+						<contact>
+							<p>Ashvin khairnar</p>
+							<p>yashkhrnr@gmail.com</p>
+
+						</contact>
 						
 						<p>find me on <span class="facebook"><a href="">facebook</a></span></p>
 						<p>get me on <span class="linkdein"><a href="">linkdein</a></span></p>
@@ -83,10 +90,20 @@
 		</footer>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script>
-			
+			//To show menu drive linnks
 			var showContent=function(){
 				document.getElementById('menu').classList.remove('hide');
 				document.getElementById('menu').classList.add('show');
+
+				document.getElementById('MENU').onclick=hideContent;
+				
+			}
+			//to hide menu driven links
+			var hideContent=function(){
+
+				document.getElementById('menu').classList.remove('show');
+				document.getElementById('menu').classList.add('hide');
+				document.getElementById('MENU').onclick=showContent;
 			}
 
 				</script>

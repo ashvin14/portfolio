@@ -76,7 +76,7 @@ li a:hover{
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.5s;
 }
-li .name{
+li ame{
 	float:left;
 	color: white;
 }
@@ -185,16 +185,10 @@ body{
 		font-family: cursive;
 	}
 	.MENU :hover{
-		border: solid white;
-	text-decoration: none;
-	color: white;
+		
+	color: black;
 	    /* background-color: rgb(118, 154, 252); */
-    border: solid 0.3px white;
-    border-radius: 15px;
-    text-decoration: none;
-    color: white;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.5s;
+    
 	}
 	.nav{
 		display: none;
