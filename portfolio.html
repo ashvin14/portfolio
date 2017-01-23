@@ -13,21 +13,27 @@
 	</head>
 	<body>
 		<div class="header">
-		<ul>
+		<ul class="mainheader">
 			<li class="MENU" id="MENU" onclick="showContent();"><p><span class="glyphicon glyphicon-th-list"></span></p></li>
-			<li class="nav"><a href=""><p>more</p></a></li>
-			<li class="nav"><a href="" ="#"><p>About me</p></a></li>
-			<li class="nav"><a href=""><p>My projects</p></a></li>
-			<li style="float: left;" class="visible"><a href=""><p>Ashvin khairnar</p></a></li>
+			<li class="nav"><a href="comingSoon.html"><p>more</p></a></li>
+			<li class="nav"><a href="#contacts" ><p>About me</p></a></li>
+			<li class="nav"><a href="commingSoon.html"><p>My projects</p></a></li>
+			<li style="float: left;" class="visible"><a href="#linkdein"><p>Ashvin khairnar</p></a></li>
 		</ul>
 		</div>
 			<div id="menu" class="content_after_menu_pressed hide" >
-				<p class="contents">more</p>
+			<ul class="menu-nav">
+				<li class="menu-item"><a href="#contacts">ABOUT ME</a></li>
+				<li class="menu-item"><a href="commingSoon.html">MY PROJECTS</a></li>
+				<li class="menu-item"><a href="commingSoon.html">MORE</a></li>
+			</ul>
+			<!--
+				<p class="contents" href="comingSoon.html"><a href="">more</a></p>
 				<hr width="80%">
-				<p class="contents">About me</p>
+				<p class="contents"><a href="">About me</a></p>
 				<hr width="80%">
-				<p class="contents">My projects</p>
-				<hr width="80%">
+				<p class="contents" href="comingSoon.html"><a href="">My projects</a></p>
+				<hr width="80%">-->
 				
 			</div>
 		<section class="row top" style="background-color: #2098d1;">
@@ -54,8 +60,9 @@
 
 			
 		</section>
+
 		<footer class="contacts">
-			<a href="#"></a>
+			<a href="#" name="contacts"></a>
 			<div class="row">
 				<div class="col-md-6">
 					<div class="profile"><img src="images/coder.jpg" height="70" width="100" style="border-radius:25px;float: left; "></div>
@@ -63,8 +70,9 @@
 						<h3 style="color: white;">About Ashvin</h3>
 						<hr>
 
-						<p style="color: white;">Front-end Developer, and graduate of Internet Technology. Ashvin combines his education with 2 years commercial experience in front-end development to produce high-quality websites and exceptional user experience.
-							Front-end Developer.
+						<p style="color: white;">I am an enthusiast developer learning new things everyday.
+									besides that i am a huge fan of music,i hear variety of music and I  love playing sports especially table tennis.
+									its my belief that one should never stop learning no matter where you reach, the hunger to learn will help you to survive this competitive world and adapt rapidly changing trends.
 						</p>
 						
 					</div>
@@ -80,8 +88,8 @@
 
 						</contact>
 						
-						<p>find me on <span class="facebook"><a href="">facebook</a></span></p>
-						<p>get me on <span class="linkdein"><a href="">linkdein</a></span></p>
+						<p>find me on <span class="facebook"><a href="" name="linkdein">facebook</a></span></p>
+						<p>get me on <span class="linkdein"><a href="https://in.linkedin.com/in/ashvin-khairnar-29b9a0121">linkdein</a></span></p>
 						
 					</div>
 				</div>
